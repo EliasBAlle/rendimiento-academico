@@ -7,7 +7,7 @@
 **Problemática:** Se necesita un sistema que permita predecir el rendimiento estudiantil basado en datos históricos y factores personales, académicos y sociales. El objetivo es identificar a los estudiantes que podrían estar en riesgo de bajo rendimiento para proporcionarles recursos adicionales y apoyo a tiempo.
 
 
-**Aplicación del modelo:** El modelo de clasificación de rendimiento estudiantil creado podría aplicarse para analizar los datos de los estudiantes actuales y predecir su categoría de rendimiento (‘Bajo’, ‘Medio’, ‘Alto’). Con esta información, la institución podría intervenir temprano con los estudiantes predichos como de bajo rendimiento, ofreciendo tutorías, asesoramiento académico, o servicios de apoyo emocional y social.
+**Aplicación del modelo:** El modelo de clasificación de rendimiento estudiantil creado podría aplicarse para analizar los datos de los estudiantes actuales y predecir su categoría de rendimiento ('Muy malo','Malo', 'Regular', 'Alto', 'excelente'). Con esta información, la institución podría intervenir temprano con los estudiantes predichos como de bajo rendimiento, ofreciendo tutorías, asesoramiento académico, o servicios de apoyo emocional y social.
 
 Información sobre el conjunto de datos:
 
