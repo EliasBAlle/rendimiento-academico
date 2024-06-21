@@ -35,8 +35,8 @@ modelo_arbol_c = modelo_arbol_c.fit(X_train, y_train)
 # Crear la interfaz de Streamlit
 with st.sidebar:
     st.sidebar.subheader('Parámetros')
-    G1 = st.slider('G1', float(df['G1'].min()), float(df['G1'].max()))
-    G2 = st.slider('G2', float(df['G2'].min()), float(df['G2'].max()))
+    G1 = st.slider('nota primer corte',0.0,5.0)
+    G2 = st.slider('nota segundo corte',0.0,5.0)
     studytime = st.slider('Horas de estudio por semana', float(df['studytime'].min()), float(df['studytime'].max()))
     failures = st.slider('Número de fracasos', float(df['failures'].min()), float(df['failures'].max()))
     absences = st.slider('Número de ausencias', float(df['absences'].min()), float(df['absences'].max()))
