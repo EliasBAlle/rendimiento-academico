@@ -115,43 +115,46 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
 
    **Características de Mayor Peso**
 
-    G1 (Nota del Primer corte)
-    G2 (Nota del Segundo corte)
-    failures (Número de fracasos de clases anteriores)
-    studytime (Tiempo de estudio semanal)
-    absences (Número de ausencias escolares)
-    Medu (Educación de la madre)
-    Fedu (Educación del padre)
-    schoolsup (Apoyo educativo adicional)
-    higher (Desea cursar educación superior)
-    goout (Salidas con amigos)
+   G1(notas del primer corte)
+   
+   G2(notas del segundo corte)
 
-  **Razones de su Importancia**
+   failures (Numero de fracaso de clases anteriores)
 
-    G1 y G2:
-        Razón: Las notas de los primeros cortes (G1 y G2) son indicadores directos del rendimiento académico a lo largo del curso. Estas notas reflejan la consistencia y el progreso del estudiante, lo cual es fundamental para predecir su nota final (G3).
+   studytime(tiempo de estudio senmanal)
 
-    failures:
-        Razón: El número de fracasos en clases anteriores es un fuerte indicador de dificultades académicas persistentes. Los estudiantes con más fracasos tienden a tener un rendimiento final más bajo.
+   absences (numero de ausencias escolares)
 
-    studytime:
-        Razón: El tiempo dedicado al estudio semanalmente está directamente relacionado con el rendimiento académico. Más horas de estudio suelen correlacionarse con mejores notas.
+   medu (educacion de la madre)
 
-    absences:
-        Razón: Las ausencias escolares afectan negativamente el rendimiento porque los estudiantes pierden contenido importante y oportunidades de aprendizaje.
+   fedu (educacion del padre)
 
-    Medu y Fedu:
-        Razón: El nivel educativo de los padres puede influir en el rendimiento académico del estudiante. Padres con mayor educación pueden proporcionar mejor apoyo y recursos educativos a sus hijos.
+   schoolsup(apoyo educativo adicional)
 
-    schoolsup:
-        Razón: El apoyo educativo adicional es crucial para los estudiantes que necesitan ayuda extra para entender el material del curso y mejorar su rendimiento.
+   higher( desea cursar educacion superior)
 
-    higher:
-        Razón: Los estudiantes que tienen la aspiración de continuar con educación superior suelen estar más motivados y, por lo tanto, tienden a tener un mejor rendimiento académico.
-
-    goout:
-        Razón: Aunque el tiempo social es importante para el desarrollo, un exceso de salidas con amigos puede indicar una menor dedicación al estudio, afectando negativamente el rendimiento académico.
+   goout(salida con amigos)
 
 
+   **Razones de importancia**
 
+G1 Y G2: las notas de los primeros cortes son indicadores directos del rendimiento academico a lo largo del curso. Estas notas reflejan la consistencia y el progreso del estudiante, lo cual es fundamental para predecir su nota final.(G3)
+
+Failures: el numero de fracasos en clases anteriores es un fuerte indicador de dificultades academicas persistentes. Los estudiantes con mas fracasos tienden a tener un rendimiento final mas bajo.
+
+
+Studytime: el tiempo dedicado al estudio semanalmente esta directamente relacionado con el rendimiento academico. Mas horas de estudio suelen correlasionarse con mejores notas.
+
+absences: las ausencias escolarers afectan negativamente el rendimiento porque los estudiantes pierden contenido importante y oportunidades de aprendizaje.
+
+Medu y Fedu: el nivel educativo de los padrers pueden influir en el rendimiento academico del estudiante. padres con mayor educacion pueden proporcionar mejor apoyo y recursos educativos a sus hijos.
+
+
+Schoolsup: el apoyo educativo adicional es crusial para los estudiantes que nesecitan ayuda extra para entender el material del curso y mejorar el rendimiento.
+
+Higher: los estudiantes que tienen la aspiracion de continuar con su educacion superior suelen estar mas motivados y, por lo tanto, tienden a ytener un mejor rendimiento academico.
+
+goout: Aunque el tiempo social es importante para el desarrollo, un exceso de salidas con amigos pueden indicar una menor dedicacion al estudio, afectando negativamente al rendimiento academico. 
+
+    
 
