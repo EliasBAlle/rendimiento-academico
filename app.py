@@ -41,12 +41,11 @@ modelo_arbol_c = modelo_arbol_c.fit(X_train, y_train)
 # Crear y entrenar el modelo de regresión para predecir G3
 modelo_arbol_r = tree.DecisionTreeRegressor()
 modelo_arbol_r = modelo_arbol_r.fit(X_train_reg, y_train_reg)
-
-# Crear la interfaz de Streamlit
+#intefaz 
 with st.sidebar:
     st.sidebar.subheader('Parámetros')
-    G1 = st.slider('Nota del primer corte', 0.0, 20.0)
-    G2 = st.slider('Nota del segundo corte', 0.0, 20.0)
+    G1 = st.slider('Nota del primer corte', 0.0, 5.0)
+    G2 = st.slider('Nota del segundo corte', 0.0, 5.0)
     studytime = st.slider('Tiempo de estudio semanal', float(df['studytime'].min()), float(df['studytime'].max()))
     failures = st.slider('Número de fracasos de clases anteriores', float(df['failures'].min()), float(df['failures'].max()))
     absences = st.slider('Número de ausencias escolares', float(df['absences'].min()), float(df['absences'].max()))
@@ -57,7 +56,7 @@ with st.sidebar:
     goout = st.slider('Salidas con amigos', float(df['goout'].min()), float(df['goout'].max()))
 
 # Predecir con el modelo
-entrada = pd.DataFrame([[G1, G2, studytime, failures, absences, Medu, Fedu, schoolsup, higher, goout]], columns=features)
+entrada = pd.DataFrame([[G1*4, G2*4, studytime, failures, absences, Medu, Fedu, schoolsup, higher, goout]], columns=features)
 
 # Codificar la entrada de usuario de la misma manera que los datos de entrenamiento
 entrada = pd.get_dummies(entrada, columns=['schoolsup', 'higher'], drop_first=True)
