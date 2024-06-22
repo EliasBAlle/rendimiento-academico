@@ -113,7 +113,7 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
 
 32. G3 - Nota final (numérica: de 0 a 20, objetivo de salida)
 
-**Características de Mayor Peso**
+   **Características de Mayor Peso**
 
     G1 (Nota del Primer corte)
     G2 (Nota del Segundo corte)
@@ -126,7 +126,7 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
     higher (Desea cursar educación superior)
     goout (Salidas con amigos)
 
-**Razones de su Importancia**
+  **Razones de su Importancia**
 
     G1 y G2:
         Razón: Las notas de los primeros cortes (G1 y G2) son indicadores directos del rendimiento académico a lo largo del curso. Estas notas reflejan la consistencia y el progreso del estudiante, lo cual es fundamental para predecir su nota final (G3).
@@ -151,6 +151,7 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
 
     goout:
         Razón: Aunque el tiempo social es importante para el desarrollo, un exceso de salidas con amigos puede indicar una menor dedicación al estudio, afectando negativamente el rendimiento académico.
+
 
 
 
