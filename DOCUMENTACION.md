@@ -113,4 +113,44 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
 
 32. G3 - Nota final (numérica: de 0 a 20, objetivo de salida)
 
+**Características de Mayor Peso**
+
+    G1 (Nota del Primer corte)
+    G2 (Nota del Segundo corte)
+    failures (Número de fracasos de clases anteriores)
+    studytime (Tiempo de estudio semanal)
+    absences (Número de ausencias escolares)
+    Medu (Educación de la madre)
+    Fedu (Educación del padre)
+    schoolsup (Apoyo educativo adicional)
+    higher (Desea cursar educación superior)
+    goout (Salidas con amigos)
+
+**Razones de su Importancia**
+
+    G1 y G2:
+        Razón: Las notas de los primeros cortes (G1 y G2) son indicadores directos del rendimiento académico a lo largo del curso. Estas notas reflejan la consistencia y el progreso del estudiante, lo cual es fundamental para predecir su nota final (G3).
+
+    failures:
+        Razón: El número de fracasos en clases anteriores es un fuerte indicador de dificultades académicas persistentes. Los estudiantes con más fracasos tienden a tener un rendimiento final más bajo.
+
+    studytime:
+        Razón: El tiempo dedicado al estudio semanalmente está directamente relacionado con el rendimiento académico. Más horas de estudio suelen correlacionarse con mejores notas.
+
+    absences:
+        Razón: Las ausencias escolares afectan negativamente el rendimiento porque los estudiantes pierden contenido importante y oportunidades de aprendizaje.
+
+    Medu y Fedu:
+        Razón: El nivel educativo de los padres puede influir en el rendimiento académico del estudiante. Padres con mayor educación pueden proporcionar mejor apoyo y recursos educativos a sus hijos.
+
+    schoolsup:
+        Razón: El apoyo educativo adicional es crucial para los estudiantes que necesitan ayuda extra para entender el material del curso y mejorar su rendimiento.
+
+    higher:
+        Razón: Los estudiantes que tienen la aspiración de continuar con educación superior suelen estar más motivados y, por lo tanto, tienden a tener un mejor rendimiento académico.
+
+    goout:
+        Razón: Aunque el tiempo social es importante para el desarrollo, un exceso de salidas con amigos puede indicar una menor dedicación al estudio, afectando negativamente el rendimiento académico.
+
+
 
