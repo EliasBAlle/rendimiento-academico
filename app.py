@@ -85,6 +85,6 @@ elif resultado[0] == 'Malo':
 elif resultado[0] == 'Regular':
     st.image('https://via.placeholder.com/600x400.png?text=Regular+rendimiento', width=600)
 elif resultado[0] == 'Alto':
-    st.image('https://via.placeholder.com/600x400.png?text=Alto+rendimiento', width=600)
+    st.image('https://image.slidesharecdn.com/bajortendimientoescolar-130617221135-phpapp02/85/Bajo-rtendimiento-escolar-1-320.jpg', width=600)
 else:
     st.image('https://via.placeholder.com/600x400.png?text=Excelente', width=600)
