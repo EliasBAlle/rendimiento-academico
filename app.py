@@ -41,7 +41,8 @@ modelo_arbol_c = modelo_arbol_c.fit(X_train, y_train)
 # Crear y entrenar el modelo de regresión para predecir G3
 modelo_arbol_r = tree.DecisionTreeRegressor()
 modelo_arbol_r = modelo_arbol_r.fit(X_train_reg, y_train_reg)
-#intefaz 
+
+# Crear la interfaz de Streamlit
 with st.sidebar:
     st.sidebar.subheader('Parámetros')
     G1 = st.slider('Nota del primer corte', 0.0, 5.0)
@@ -85,6 +86,30 @@ elif resultado[0] == 'Malo':
 elif resultado[0] == 'Regular':
     st.image('https://via.placeholder.com/600x400.png?text=Regular+rendimiento', width=600)
 elif resultado[0] == 'Alto':
-    st.image('https://image.slidesharecdn.com/bajortendimientoescolar-130617221135-phpapp02/85/Bajo-rtendimiento-escolar-1-320.jpg', width=600)
+    st.image('https://via.placeholder.com/600x400.png?text=Alto+rendimiento', width=600)
 else:
     st.image('https://via.placeholder.com/600x400.png?text=Excelente', width=600)
+
+# Identificar parámetros que influyen en bajo rendimiento
+if resultado[0] in ['Muy bajo', 'Malo']:
+    st.write("## Recomendaciones para mejorar el rendimiento")
+    if G1 < 10:
+        st.write("Recomendación: Mejora en la nota del primer corte. Considere aumentar el tiempo de estudio y buscar ayuda adicional.")
+    if G2 < 10:
+        st.write("Recomendación: Mejora en la nota del segundo corte. Considere participar en tutorías y grupos de estudio.")
+    if studytime < 2:
+        st.write("Recomendación: Aumentar el tiempo de estudio semanal. Intente organizar un horario de estudio regular.")
+    if failures > 0:
+        st.write("Recomendación: Reducir el número de fracasos en clases anteriores. Trabaje en técnicas de estudio más efectivas y pida apoyo.")
+    if absences > 5:
+        st.write("Recomendación: Reducir el número de ausencias escolares. Asistir a clases regularmente es crucial para el éxito académico.")
+    if Medu < 2:
+        st.write("Recomendación: Considerar involucrar más a la madre en el proceso educativo.")
+    if Fedu < 2:
+        st.write("Recomendación: Considerar involucrar más al padre en el proceso educativo.")
+    if schoolsup == 'no':
+        st.write("Recomendación: Solicitar apoyo educativo adicional si está disponible.")
+    if higher == 'no':
+        st.write("Recomendación: Reflexionar sobre la importancia de la educación superior y buscar orientación vocacional.")
+    if goout > 3:
+        st.write("Recomendación: Reducir las salidas con amigos y enfocarse más en los estudios.")
