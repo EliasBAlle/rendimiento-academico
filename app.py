@@ -82,7 +82,7 @@ st.write('Porcentaje de acierto de regresión:', modelo_arbol_r.score(X_test_reg
 if resultado[0] == 'Muy bajo':
     st.image('https://image.isu.pub/211120003018-85a8f6801dbe35c5745c79f0dfe5f2f6/jpg/page_1_thumb_large.jpg', width=600)
 elif resultado[0] == 'Malo':
-    st.image('https://via.placeholder.com/600x400.png?text=Malo+rendimiento', width=600)
+    st.image('https://www.sabermas.umich.mx/images/stories/64/ARTICULO2A1.png', width=600)
 elif resultado[0] == 'Regular':
     st.image('https://via.placeholder.com/600x400.png?text=Regular+rendimiento', width=600)
 elif resultado[0] == 'Alto':
