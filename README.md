@@ -115,39 +115,40 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
 
    **Características de Mayor Peso**
 
-   G1(notas del primer corte)
+   G1(notas del primer corte) (1.00 a 5.00)
    
-   G2(notas del segundo corte)
+   G2(notas del segundo corte) (1.00 a 5.00)
 
-   failures (Numero de fracaso de clases anteriores) 
+   failures (Numero de fracaso de clases anteriores) (numérico: n si 1< = n < 3, de lo contrario 4)
 
-   studytime(tiempo de estudio senmanal)
+   studytime(tiempo de estudio senmanal) (numérico: 1 - < 2 horas, 2 - 2 a 5 horas, 3 - 5 a 10 horas, o 4 - >10 horas)
 
-   absences (numero de ausencias escolares)
+   absences (numero de ausencias escolares) (numérico: de 0 a 93)
 
-   medu (educacion de la madre)
+   medu (educacion de la madre) numérico: 0 - ninguno, 1 - educación primaria (4º grado), 2 - 5º a 9º grado, 3 - educación secundaria, 4 - educación superior)
 
-   fedu (educacion del padre)
+  fedu (educacion del padre): 
+ (numérico: 0 - ninguno, 1 - educación primaria (4º grado), 2º - 5º a 9º grado, 3º - educación secundaria, 4º - educación superior)
 
-   schoolsup(apoyo educativo adicional)
+   schoolsup(apoyo educativo adicional) (binario: sí o no)
 
-   higher( desea cursar educacion superior)
+   higher( desea cursar educacion superior) (binario: sí o no)
 
-   goout(salida con amigos)
+   goout(salida con amigos) (numérico: de 1 - muy bajo a 5 - muy alto)
 
 
    **Razones de importancia**
 
 G1 Y G2: las notas de los primeros cortes son indicadores directos del rendimiento academico a lo largo del curso. Estas notas reflejan la consistencia y el progreso del estudiante, lo cual es fundamental para predecir su nota final.(G3)
 
-Failures: el numero de fracasos en clases anteriores es un fuerte indicador de dificultades academicas persistentes. Los estudiantes con mas fracasos tienden a tener un rendimiento final mas bajo. (numérico: n si 1< = n < 3, de lo contrario 4)
+Failures: el numero de fracasos en clases anteriores es un fuerte indicador de dificultades academicas persistentes. Los estudiantes con mas fracasos tienden a tener un rendimiento final mas bajo. 
 
 
 Studytime: el tiempo dedicado al estudio semanalmente esta directamente relacionado con el rendimiento academico. Mas horas de estudio suelen correlasionarse con mejores notas.
 
 absences: las ausencias escolarers afectan negativamente el rendimiento porque los estudiantes pierden contenido importante y oportunidades de aprendizaje.
 
-Medu y Fedu: el nivel educativo de los padrers pueden influir en el rendimiento academico del estudiante. padres con mayor educacion pueden proporcionar mejor apoyo y recursos educativos a sus hijos.
+Medu y Fedu: el nivel educativo de los padrers pueden influir en el rendimiento academico del estudiante. padres con mayor educacion pueden proporcionar mejor apoyo y recursos educativos a sus hijos. 
 
 
 Schoolsup: el apoyo educativo adicional es crusial para los estudiantes que nesecitan ayuda extra para entender el material del curso y mejorar el rendimiento.
