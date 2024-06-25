@@ -140,7 +140,7 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
 
 G1 Y G2: las notas de los primeros cortes son indicadores directos del rendimiento academico a lo largo del curso. Estas notas reflejan la consistencia y el progreso del estudiante, lo cual es fundamental para predecir su nota final.(G3)
 
-Failures: el numero de fracasos en clases anteriores es un fuerte indicador de dificultades academicas persistentes. Los estudiantes con mas fracasos tienden a tener un rendimiento final mas bajo.
+Failures: el numero de fracasos en clases anteriores es un fuerte indicador de dificultades academicas persistentes. Los estudiantes con mas fracasos tienden a tener un rendimiento final mas bajo. (numérico: n si 1< = n < 3, de lo contrario 4)
 
 
 Studytime: el tiempo dedicado al estudio semanalmente esta directamente relacionado con el rendimiento academico. Mas horas de estudio suelen correlasionarse con mejores notas.
