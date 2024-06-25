@@ -20,13 +20,17 @@ y_reg = df['G3']
 # Codificar variables categóricas
 X = pd.get_dummies(X, columns=['schoolsup', 'higher'], drop_first=True)
 
-# Manejar valores NaN en X (rellenar con la media de la columna)
-X.fillna(X.mean(), inplace=True)
+# Manejar valores NaN en X
+for column in X.select_dtypes(include=['float64', 'int64']).columns:
+    X[column].fillna(X[column].mean(), inplace=True)
+for column in X.select_dtypes(include=['object']).columns:
+    X[column].fillna(X[column].mode()[0], inplace=True)
 
-# Manejar valores NaN en y y y_reg (eliminar filas con NaN en y o y_reg)
-X = X[y.notna() & y_reg.notna()]
-y = y[y.notna() & y_reg.notna()]
-y_reg = y_reg[y.notna() & y_reg.notna()]
+# Manejar valores NaN en y y y_reg
+valid_indices = y.notna() & y_reg.notna()
+X = X[valid_indices]
+y = y[valid_indices]
+y_reg = y_reg[valid_indices]
 
 # Dividir los datos en entrenamiento y prueba para clasificación
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -45,15 +49,15 @@ modelo_arbol_r = modelo_arbol_r.fit(X_train_reg, y_train_reg)
 # Crear la interfaz de Streamlit
 with st.sidebar:
     st.sidebar.subheader('Parámetros')
-    G1 = st.slider('Nota del primer corte', 0.0, 5.0)
-    G2 = st.slider('Nota del segundo corte', 0.0, 5.0)
+    G1 = st.slider('Nota del primer corte (0-5)', 0.0, 5.0)
+    G2 = st.slider('Nota del segundo corte (0-5)', 0.0, 5.0)
     studytime = st.slider('Tiempo de estudio semanal', float(df['studytime'].min()), float(df['studytime'].max()))
     failures = st.slider('Número de fracasos de clases anteriores', float(df['failures'].min()), float(df['failures'].max()))
     absences = st.slider('Número de ausencias escolares', float(df['absences'].min()), float(df['absences'].max()))
     Medu = st.slider('Educación de la madre', float(df['Medu'].min()), float(df['Medu'].max()))
     Fedu = st.slider('Educación del padre', float(df['Fedu'].min()), float(df['Fedu'].max()))
-    schoolsup = st.selectbox('Apoyo educativo adicional', df['schoolsup'].unique())
-    higher = st.selectbox('Desea cursar educación superior', df['higher'].unique())
+    schoolsup = st.selectbox('Apoyo educativo adicional (sí/no)', df['schoolsup'].unique())
+    higher = st.selectbox('Desea cursar educación superior (sí/no)', df['higher'].unique())
     goout = st.slider('Salidas con amigos', float(df['goout'].min()), float(df['goout'].max()))
 
 # Predecir con el modelo
@@ -75,8 +79,8 @@ nota_final_aproximada = prediccion_G3[0] / 4
 nota_final = round(nota_final_aproximada, 2)
 st.write('La nota final aproximada está entre:', nota_final - 0.25, 'y', nota_final + 0.25)
 
-st.write('Porcentaje de acierto:', modelo_arbol_c.score(X_test, y_test) * 100, '%')
-st.write('Porcentaje de acierto de regresión:', modelo_arbol_r.score(X_test_reg, y_test_reg) * 100, '%')
+st.write('Porcentaje de acierto del modelo de clasificación:', modelo_arbol_c.score(X_test, y_test) * 100, '%')
+st.write('Porcentaje de acierto del modelo de regresión:', modelo_arbol_r.score(X_test_reg, y_test_reg) * 100, '%')
 
 # Mostrar imagen según el resultado (opcional)
 if resultado[0] == 'Muy bajo':
