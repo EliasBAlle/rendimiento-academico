@@ -92,7 +92,7 @@ elif resultado[0] == 'Regular':
 elif resultado[0] == 'Alto':
     st.image('https://educowebmedia.blob.core.windows.net/educowebmedia/educospain/media/images/blog/nina-escuela-levantando-la-mano.jpg', width=600)
 else:
-    st.image('https://via.placeholder.com/600x400.png?text=Excelente', width=600)
+    st.image('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0x7SE9nHdJsmbOaUJuTJK3TRE7fPc48F_ruGXChYsTUMOqYnOxRFq901-DjD7', width=600)
 
 # Identificar parámetros que influyen en bajo rendimiento
 if resultado[0] in ['Muy bajo', 'Malo']:
