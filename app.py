@@ -92,7 +92,7 @@ elif resultado[0] == 'Regular':
 elif resultado[0] == 'Alto':
     st.image('https://educowebmedia.blob.core.windows.net/educowebmedia/educospain/media/images/blog/nina-escuela-levantando-la-mano.jpg', width=600)
 else:
-    st.image('https://educowebmedia.blob.core.windows.net/educowebmedia/educospain/media/images/blog/nina-escuela-levantando-la-mano.jpg', width=600)
+    st.image('https://lasoposiciones.net/wp-content/uploads/2018/08/como-mejorar-el-rendimiento-academico.jpg', width=600)
 
 # Identificar parámetros que influyen en bajo rendimiento
 if resultado[0] in ['Muy bajo', 'Malo']:
