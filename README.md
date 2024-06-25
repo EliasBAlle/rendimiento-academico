@@ -119,7 +119,7 @@ Los siguientes grados están relacionados con la asignatura del curso, Matemáti
    
    G2(notas del segundo corte)
 
-   failures (Numero de fracaso de clases anteriores)
+   failures (Numero de fracaso de clases anteriores) 
 
    studytime(tiempo de estudio senmanal)
 
