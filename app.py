@@ -88,7 +88,7 @@ if resultado[0] == 'Muy bajo':
 elif resultado[0] == 'Malo':
     st.image('https://www.sabermas.umich.mx/images/stories/64/ARTICULO2A1.png', width=600)
 elif resultado[0] == 'Regular':
-    st.image('https://via.placeholder.com/600x400.png?text=Regular+rendimiento', width=600)
+    st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI839m5rRZetjZ3Ifrf2RnI1T8SjFgqQty_HsC3pZmmp0eiRbsmIDbcKh8eYvf', width=600)
 elif resultado[0] == 'Alto':
     st.image('https://educowebmedia.blob.core.windows.net/educowebmedia/educospain/media/images/blog/nina-escuela-levantando-la-mano.jpg', width=600)
 else:
