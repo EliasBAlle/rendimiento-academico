@@ -11,6 +11,7 @@ Research: Experiencia en investigación (1 si tiene, 0 si no).
 Chance of Admit: Probabilidad de admisión (en una escala de 0 a 1).
 
 **Razones de su Importancia**
+
 GRE Score (Puntuación en el examen GRE) (Examen de registro de posgrados): Evalúa las habilidades verbales, cuantitativas y de escritura analítica, que son cruciales para el éxito académico en programas de posgrado.
 
 SOP (Declaración de Propósito): Es un ensayo en el que el estudiante explica sus objetivos académicos y profesionales, y por qué está interesado en un programa específico. Un buen SOP puede demostrar motivación y claridad de propósito.
