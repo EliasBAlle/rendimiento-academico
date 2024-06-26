@@ -2,16 +2,17 @@
 
 **Características utilizadas en el modelo:**
 
-GRE Score: Puntuación en el examen GRE.
+GRE Score: Puntuación en el examen GRE. (260 a 340)
 
-TOEFL Score: Puntuación en el examen TOEFL.
-University Rating: Calificación de la universidad (del 1 al 5).
+TOEFL Score: Puntuación en el examen TOEFL. (0 a 120)
 
-SOP: Fortaleza del Statement of Purpose (del 1 al 5).
+University Rating: Calificación de la universidad (1 a 5).
 
-LOR: Fortaleza de las cartas de recomendación (del 1 al 5).
+SOP: Fortaleza del Statement of Purpose ( 1 a 5).
 
-CGPA: Promedio de calificaciones (en una escala de 10).
+LOR: Fortaleza de las cartas de recomendación ( 1 a 5).
+
+CGPA: Promedio de calificaciones ( 0 a 10).
 
 Research: Experiencia en investigación (1 si tiene, 0 si no).
 
