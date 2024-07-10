@@ -52,8 +52,8 @@ with st.sidebar:
     )
     studytime = int(studytime_option.split(' ')[0])
     
-    failures = st.slider('Número de fracasos de clases anteriores', float(df['failures'].min()), float(df['failures'].max()))
-    absences = st.slider('Número de ausencias escolares', float(df['absences'].min()), float(df['absences'].max()))
+    failures = st.slider('Número de fracasos de clases anteriores', int(df['failures'].min()), int(df['failures'].max()))
+    absences = st.slider('Número de ausencias escolares', int(df['absences'].min()), int(df['absences'].max()))
     
     medu_option = st.selectbox(
         'Educación de la madre',
